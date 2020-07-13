@@ -1,6 +1,6 @@
 # REACT - Runtime Environment for Adapting Communication SysTems
 
-This repository contains the source code of REACT, presented in the full paper titled *REACT: A Model-Based Runtime Environment for Adapting Communication Systems* and the demo with the title *Enhancing a Communication System with Adaptive Behavior using REACT*.
+This repository contains the source code of REACT presented in the full paper titled *REACT: A Model-Based Runtime Environment for Adapting Communication Systems* and the demo with the title *Enhancing a Communication System with Adaptive Behavior using REACT*.
 
 ## Repository Structure
 
@@ -8,7 +8,7 @@ This repository contains the source code of REACT, presented in the full paper t
 📦REACT
  ┣ 📂bndtools: Contains Bndtools workspace
  ┃ ┣ 📂ALElement
- ┃ ┃ ┣ 📜REACT.bndrun: Run Configuration for running REACT inside the IDE with dummy example
+ ┃ ┃ ┣ 📜REACT_Example.bndrun: Run Configuration for running REACT inside the IDE with dummy example
  ┃ ┃ ┣ 📜REACT.bndrun: Run Configuration for running REACT inside the IDE
  ┃ ┃ ┣ 📜REACT_Export.bndrun: Run Configuration for exporting REACT as a jar
  ┃ ┃ ┣ 📜REACT_only_Knowledge.bndrun: Run Configuration for running the knowledge inside the IDE
@@ -53,14 +53,14 @@ This repository contains the source code of REACT, presented in the full paper t
 2. Install Bndtools according to their website [here](https://bndtools.org/installation.html).
 3. Optional: Install [Eclipse Papyrus](https://www.eclipse.org/papyrus/download.html) if you want to edit the Target System Specification (UML) inside the graphical editor.
 4. Run Eclipse and create a first workspace named, e.g., `REACT_Logics`. Import the `core` and `idl` folder using the import wizard for importing existing Maven projects.
-5. Run `clean install` using Maven for the idl project first, and then for the core project. This installs the logic jars in your local Maven repository which will be used by Bndtools later.
+5. Run `clean install` using Maven for the idl project first, and then for the core project. This installs the idl and core jars in your local Maven repository which will be used by Bndtools later.
 6. Create a separate workspace named, e.g., `REACT_Bndtools`. Use the import wizard for importing an existing Bndtools workspace. Select the `bndtools` folder from the repository.
 7. Download Clafer 0.4.5 from [here](https://gsd.uwaterloo.ca/clafer-tools-binary-distributions.html) and put it to a memorable place.
 8. Optional: Add the extracted Clafer folder to your path.
 
 ## Running REACT
 
-Below you can find an example output of running REACT using the `REACT_Example.bndrun` run configuration inside of Eclipse in the `REACT_Bndtools` workspace.  The multicast DNS mode is used for setting up the connections between the different components. This configuration also loads a dummy sensor end effector. The dummy sensor sends its data after 10 seconds. The last line shows the resulting adaptation decision for instantiating an instance of `ServerLauncher`. The specifications are taken from the supplementary material [here](https://github.com/martinpfannemueller/ACSOS2020-Supplementary-Material/tree/master/Enhancing_a_Communication_System_with_Adaptive_Behavior_using_REACT/configs).
+Below you can find an example output of running REACT using the `REACT_Example.bndrun` run configuration inside of Eclipse in the `REACT_Bndtools` workspace.  Here, the multicast DNS mode is used for setting up the connections between the different components. This configuration also loads a dummy sensor end effector. The dummy sensor sends its data after 10 seconds. The last line shows the resulting adaptation decision for instantiating an instance of `ServerLauncher`. The specifications are taken from the supplementary material [here](https://github.com/martinpfannemueller/ACSOS2020-Supplementary-Material/tree/master/Enhancing_a_Communication_System_with_Adaptive_Behavior_using_REACT/configs).
 
 ---
 **NOTE**: When you first run this run configuration without completing step 8 from above, you will get an exception stating, that the Clafer binary could not be found. In this case, you have to provide the environment variable `CLAFER_EXEC_PATH` to the run configuration inside Eclipse with an absolute path to the Clafer executable.
