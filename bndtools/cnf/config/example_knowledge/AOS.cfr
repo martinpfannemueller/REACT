@@ -1,0 +1,56 @@
+HighRT 0..1
+ExtraServers 0..1
+Underloaded 0..1
+
+Status 1..1
+	[ sumUtilization = sum Server.utilization ]
+	[ averageUtilization = sumUtilization / # Server ]
+	sumUtilization -> integer 1..1
+	averageUtilization -> integer 1..1
+
+[	
+	if Manager.responseTime >= 75
+		then
+			one HighRT
+		else
+			no HighRT
+
+	if Manager.activeServers < Manager.maxServers
+		then
+			one ExtraServers
+		else
+			no ExtraServers
+
+	if Status.averageUtilization < 30 && Status.averageUtilization != 0
+		then
+			one Underloaded
+		else
+			no Underloaded
+
+	if HighRT && ExtraServers
+		then
+			one ServerLauncher
+		else
+			no ServerLauncher
+
+	if Underloaded && Manager.activeServers > 1
+		then
+			one ServerRemover
+		else
+			no ServerRemover
+]
+
+
+ServerRemover 0..1
+	[ no ServerLauncher ]
+
+ServerLauncher 0..1
+	[ no ServerRemover ]
+
+abstract Server
+	utilization -> integer 1..1
+
+abstract Manager
+	activeServers -> integer 1..1
+	maxServers -> integer 1..1
+	responseTime -> integer 1..1

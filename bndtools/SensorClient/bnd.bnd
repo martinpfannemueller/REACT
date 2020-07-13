@@ -1,0 +1,9 @@
+-buildpath: \
+	com.zeroc.ice.ebr,\
+	org.apache.felix.ipojo.annotations,\
+	com.google.gson,\
+	log4j,\
+	javax.jmdns,\
+	react.idl,\
+	react.structure,\
+	react.util

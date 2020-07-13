@@ -1,0 +1,11 @@
+# List repository contents using GAV coordinates
+
+react:clafermonitor:0.0.11-SNAPSHOT
+react:claferanalyzer:0.0.11-SNAPSHOT
+react:claferplanner:0.0.11-SNAPSHOT
+react:claferexecutor:0.0.11-SNAPSHOT
+
+react:knowledge:0.0.11-SNAPSHOT
+react:idl:0.0.7-SNAPSHOT
+react:structure:0.0.11-SNAPSHOT
+react:util:0.0.11-SNAPSHOT

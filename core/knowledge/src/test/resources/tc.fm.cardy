@@ -1,0 +1,39 @@
+1..1 root gt=or gi=or {
+    1..1 fsSystem gt=or gi=or {
+        1..1 fsWOpt gt=or gi=or {
+            weightOptimizationThreshold:Real 0..20
+        }
+        1..1 fsTCAlgo gt=xor gi=xor {
+            fsTCint:Integer 1..20
+            0..1 fsMAXPOWERTC
+            0..1 fsDKTC gt=or gi=or {
+                parameterKtcK:Real 1..2
+            }
+            0..1 fsEKTC gt=or gi=or {
+                parameterEKtcK:Real 1..2
+            }
+            0..1 fsLSTARKTC gt=or gi=or {
+                parameterLStarKtcK:Real 1..2
+                parameterLStarKtcA:Real 1..2
+            }
+            0..1 fsLMST
+            0..1 fsGMST
+        }
+    }
+    1..1 fcContext gt=or gi=or {
+        1..1 fcMobSpeed gt=or gi=or {
+            mobilitySpeed:Real 0..5
+        }
+        1..1 fcScenario gt=xor gi=xor {
+            0..1 fcPOINTTOPOINT
+            0..1 fcGOSSIP
+            0..1 fcDATACOLLECTION
+        }
+        1..1 fcTopology gt=or gi=or {
+            topologyDensity:Real 0..500
+            nodeCount:Integer 0..1000
+            edgeCount:Integer 0..1000000
+            worldSize:Integer 0..5000
+        }
+    }
+}

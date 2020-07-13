@@ -1,0 +1,16 @@
+1..1 root gt=or gi=or {
+    1..1 fsSystem gt=xor gi=xor {
+        0..1 featureOne gt=or gi=or {
+            aProperty:Integer 1..100
+        }
+        0..1 featureTwo
+        0..1 featureThree
+    }
+    1..1 fcContext gt=or gi=or {
+        property1:Integer 1..100
+        property2:Real 1..200
+    }
+}
+[	(property1 > 10) => featureTwo &&
+	(property1 <= 10) => featureThree
+]

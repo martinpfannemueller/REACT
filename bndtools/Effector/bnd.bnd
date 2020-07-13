@@ -1,0 +1,16 @@
+-buildpath: \
+	com.zeroc.ice.ebr,\
+	org.apache.felix.ipojo.annotations,\
+	com.ecwid.consul-api.ebr,\
+	com.google.gson,\
+	log4j,\
+	javax.jmdns,\
+	react.idl,\
+	react.structure,\
+	react.util
+-runfw: org.eclipse.osgi;version='[3.13.200.v20181130-2106,3.13.200.v20181130-2106]'
+-runee: JavaSE-1.8
+-runrequires: \
+	bnd.identity;id='react.idl',\
+	bnd.identity;id='react.structure',\
+	bnd.identity;id='react.util'

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_SrKAgK6SEeeBmb6OGhDggA" name="ComponentModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_h0TJ4K6SEeeBmb6OGhDggA" name="EnvironmentComponent">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6hYHoK6SEeeBmb6OGhDggA" name="mobilitySpeedInMeterPerSecond">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9FlJwK6SEeeBmb6OGhDggA" name="averageDegree">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__XWYEK6SEeeBmb6OGhDggA" name="scenario">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YS628MiAEeeQP94powCXZw" name="nodeCount">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bgPHgMiAEeeQP94powCXZw" name="edgeCount">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eylpEMiAEeeQP94powCXZw" name="worldSize">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_CdnlcK6TEeeBmb6OGhDggA" name="TopologyPlanner" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YiS7UK9IEeeBmb6OGhDggA" name="topologyControlInterval">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PVIoMK9IEeeBmb6OGhDggA" name="D_KTC">
+    <generalization xmi:type="uml:Generalization" xmi:id="_talbMK98EeeBmb6OGhDggA" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9rxvYK9IEeeBmb6OGhDggA" name="k">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lk-HcK9IEeeBmb6OGhDggA" name="LSTAR_KTC">
+    <generalization xmi:type="uml:Generalization" xmi:id="__7qwwK98EeeBmb6OGhDggA" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HHNvEK9JEeeBmb6OGhDggA" name="a">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NLEu8K9JEeeBmb6OGhDggA" name="k">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vy22QM3dEee0-fiW6sYHKw" name="MAXPOWER_TC">
+    <generalization xmi:type="uml:Generalization" xmi:id="_vy22Qc3dEee0-fiW6sYHKw" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0KJYwM9gEeeXCritTfbYJw" name="E_KTC">
+    <generalization xmi:type="uml:Generalization" xmi:id="_0KJYwc9gEeeXCritTfbYJw" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LZWDQM9hEeeXCritTfbYJw" name="k">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7VTX4M9gEeeXCritTfbYJw" name="GG">
+    <generalization xmi:type="uml:Generalization" xmi:id="_7VTX4c9gEeeXCritTfbYJw" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FCOJIM9hEeeXCritTfbYJw" name="RNG">
+    <generalization xmi:type="uml:Generalization" xmi:id="_FCOJIc9hEeeXCritTfbYJw" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U2rgYM9hEeeXCritTfbYJw" name="XTC">
+    <generalization xmi:type="uml:Generalization" xmi:id="_U2rgYc9hEeeXCritTfbYJw" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_X9m1EM9hEeeXCritTfbYJw" name="LMST">
+    <generalization xmi:type="uml:Generalization" xmi:id="_X9m1Ec9hEeeXCritTfbYJw" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ye8nkM9hEeeXCritTfbYJw" name="Yao">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Ye8nkc9hEeeXCritTfbYJw" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VefXEND9EeehD4_pNOUgWQ" name="coneCount">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Y_H8cM9hEeeXCritTfbYJw" name="GMST">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Y_H8cc9hEeeXCritTfbYJw" general="_CdnlcK6TEeeBmb6OGhDggA"/>
+  </packagedElement>
+</uml:Model>
