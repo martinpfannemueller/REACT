@@ -19,7 +19,7 @@ REACT offers the following configuration options for setting up and running a MA
 * **logInputOutput** (Boolean String): Only used for debugging. This prints the input and outputs of this component to the console.
 * **printSendingTime** (Boolean String): Only used for evaluation. This lets the component print a timestamp when it sends away its result.
 
-The filename of the config file of a MAPE component must be like this `manta.ALElement-<YOUR_NAME>.cfg`
+The filename of the config file of a MAPE component must be like this `react.ALElement-<YOUR_NAME>.cfg`
 
 ## Knowledge Component
 
@@ -32,7 +32,7 @@ REACT offers the following configuration options for setting up and running a kn
 * **claferFile** (String): Path to an AOS file (Clafer specification). This file is automatically loaded on startup of the component.
 * **componentModelFile** (String): Path to a TSS file (UML XML). This file is automatically loaded on startup of the component.
 
-The filename of the config file of a Knowledge component must be like this `manta.KnowledgeElement-<YOUR_NAME>.cfg`
+The filename of the config file of a Knowledge component must be like this `react.KnowledgeElement-<YOUR_NAME>.cfg`
 
 ## Sensor Component
 
@@ -47,4 +47,4 @@ REACT offers the following configuration options for setting up and running a se
 * **networkInterface** (String): IP-Address of the network interface that should be used in case of multiple network cards. The default behavior is to use the first available network card.
 * **printSendingTime** (Boolean String): Only used for evaluation. This lets the component print a timestamp when it sends away its result.
 
-The filename of the config file of a Sensor component must be like this `manta.Sensor-<YOUR_NAME>.cfg`
+The filename of the config file of a Sensor component must be like this `react.Sensor-<YOUR_NAME>.cfg`
